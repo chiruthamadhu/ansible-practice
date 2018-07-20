@@ -1,0 +1,8 @@
+---
+- name: to test demo on jenkins
+  hosts: test
+  tasks:
+    - name: to create a file
+      file:
+         path: /tmp/test.ansible
+         state: touch
